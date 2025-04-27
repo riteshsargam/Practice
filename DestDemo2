@@ -1,0 +1,12 @@
+internal class DestDemo2 : DestDemo1 {
+ public DestDemo2() {
+   Console.WriteLine("Instance2 is created.");
+ }
+ ~DestDemo2() {
+   Console.WriteLine("Instance2 is destroyed.");
+ }
+ static void Main() {
+   DestDemo2 obj = new DestDemo2();
+   Console.ReadLine();
+ }
+}
