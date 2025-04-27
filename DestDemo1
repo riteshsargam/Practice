@@ -1,0 +1,16 @@
+internal class DestDemo1
+{
+ public DestDemo1() {
+   Console.WriteLine("Instance1 is created.");
+ }
+ ~DestDemo1() {
+   Console.WriteLine("Instance1 is destroyed.");
+ }
+ static void Main(string[] args) {
+   DestDemo1 d1 = new DestDemo1();
+   DestDemo1 d2 = new DestDemo1();
+   DestDemo1 d3 = new DestDemo1();
+   //d1 = null; d3 = null; GC.Collect(); //(Write all the 3 statements in the same line with comments)
+   Console.ReadLine();
+ }
+}
